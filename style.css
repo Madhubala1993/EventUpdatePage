@@ -1,0 +1,21 @@
+body {
+  background-color: burlywood;
+  align-items: center;
+}
+
+#container {
+  background-color: rgb(42, 204, 77);
+  border: 1px solid white;
+  width: 400px;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 40px;
+}
+#button {
+  background: coral;
+}
+#button:hover {
+  background-color: rgb(14, 209, 102);
+}
