@@ -1,98 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Table</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="style.css" />
+  <title>Event Update Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <div class="container">
-    <div class="parts  mb-2 ml-1">
-      <div class="part1">
-        <form action="">
-          <div class="form-group">
-            <label for="">First Name :</label>
-            <input type="text" class="textarea" id="firstname">
-          </div>
-          <div class="form-group">
-            <label for="">Last Name :</label>
-            <input type="text" class="textarea" id="lastname">
-          </div>
-          <div class="form-group">
-            <label for="">Address :</label>
-            <input type="text" class="textarea" id="address">
-          </div>
-          <div class="form-group">
-            <label for="">Pin code :</label>
-            <input type="text" class="textarea" id="pincode">
-          </div>
-          </form>
+    <h1 class="heading">Event 1</h1>
+    <p class="seatQty">No. of available seats : 23</p>
+    <div class="data-container">
+      <div class="row">
+        <img src="https://www.newscientist.com/build/images/events-homepage-banner-mobile.943cdbe5.jpg" alt="image">
       </div>
-      
-      <div class="part2">
+      <div class="column">
         <form action="">
-          <div class="form-group mb-2">
-            <label for="">Gender :</label>
-            <input type="text" class="textarea" id="gender">
+            <div class="form-row col-auto">
+              <label for="name" class="col">Name :</label>
+              <input type="text" class="form-control" id="name" size="50">
+            </div>
+          <div class="form-row col-auto">
+            <label for="email">Email :</label>
+            <input type="email" class="form-control" id="email">
           </div>
-          <div class="form-group mb-2">
-            <label for="">Food :</label>
-            <select name="food" id="food1">
-              <option value="">--choose options--</option>
-              <option value="Idly">Idly</option>
-              <option value="Poori">Poori</option>
-              <option value="Briyani">Briyani</option>
-              <option value="Fried Rice">Fried Rice</option>
-              <option value="Pizza">Pizza</option>
-              <option value="Burger">Burger</option>
-            </select>
-            <select name="food" id="food2">
-              <option value="">--choose options--</option>
-              <option value="Idly">Idly</option>
-              <option value="Poori">Poori</option>
-              <option value="Briyani">Briyani</option>
-              <option value="Fried Rice">Fried Rice</option>
-              <option value="Pizza">Pizza</option>
-              <option value="Burger">Burger</option>
-            </select>
+          <div class="form-row col-auto">
+            <label for="phone">Phone Number :</label>
+            <input type="text" class="form-control" id="phone">
           </div>
-          <div class="form-group mb-2">
-            <label for="">State :</label>
-            <input type="text" class="textarea" id="state">
+          <div class="form-row col-auto">
+            <label for="seats">No. of seats :</label>
+            <input type="number" class="form-control" id="seats">
           </div>
-          <div class="form-group mb-2">
-            <label for="">Country :</label>
-            <input type="text" class="textarea" id="country">
+          <div class="form-row col-auto">
+            <label for="attendee">Name of attendee :</label>
+            <input type="text" class="form-control" id="attendee">
           </div>
+
+          <input type="submit" id="button" value = "SUBMIT">
+          <input type="button" id="button" value="CANCEL">
         </form>
       </div>
+    </div>
   </div>
-  <br>
-  <button id="addDatas">ADD DATA</button>
-  <div class="container2">
-    <table id="outputtable" border="2" width="400" rowspan="2" cellspacing="1" cellpadding="20">
-      <thead>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Address</th>
-        <th>Pincode</th>
-        <th>Gender</th>
-        <th>Food</th>
-        <th>state</th>
-        <th>Country</th>
-      </thead>
-      <tbody id="tablebody"></tbody>
-    </table>
-  </div>
-</div>
-  <script src="script.js"></script>
+    
 </body>
-
+<script src="script.js"></script>
 </html>

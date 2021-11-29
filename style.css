@@ -1,30 +1,51 @@
-* {
-  font-size: 15px;
+.container {
+  border: 5px solid black;
+  width: 1000px;
+  height: 500px;
+  font-family: sans-serif;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 3%;
+}
+.heading {
+  font-size: 50px;
 }
 
-#addDatas {
-  margin-left: 5em;
-  width: 20%;
-  height: 5%;
-  padding: 15px 32px;
-  font-weight: bold;
-  border-radius: 1em;
-  background-color: rgb(103, 230, 103);
+.seatQty {
+  font-size: 30px;
+}
+.data-container {
+  display: flex;
+  border: 5px solid black;
+  width: 950px;
+  height: 270px;
+  align-content: center;
+  text-align: center;
+  margin: 8px;
+  padding: 1%;
+}
+.row {
+  /* display: flex; */
+  width: 400px;
+  height: 300px;
+}
+.column {
+  font-size: 30px;
+  /* display: flex; */
+  width: 650px;
+  height: 500px;
+  text-align: right;
 }
 
-#outputtable {
-  background-color: darkturquoise;
-  margin: 1em;
-  border: 1px;
-  width: 30%;
+#button {
+  padding: 1%;
+  font-size: 70%;
+  margin-top: 5%;
+  width: 200px;
 }
-#tablebody {
-  background-color: lightgray;
-}
-.container1 {
-  flex-direction: column;
-  margin: 0%;
-}
-.parts {
-  flex-direction: row;
+
+.form-control {
+  width: 250px;
+  height: 25px;
 }
