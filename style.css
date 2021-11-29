@@ -1,7 +1,8 @@
 .container {
+  /* display: flex; */
   border: 5px solid black;
-  width: 1000px;
-  height: 500px;
+  width: 50em;
+  height: fit-content;
   font-family: sans-serif;
   align-items: center;
   text-align: center;
@@ -18,23 +19,23 @@
 .data-container {
   display: flex;
   border: 5px solid black;
-  width: 950px;
-  height: 270px;
+  width: fit-content;
+  height: fit-content;
   align-content: center;
   text-align: center;
-  margin: 8px;
+  margin: 15px;
   padding: 1%;
 }
 .row {
-  /* display: flex; */
-  width: 400px;
-  height: 300px;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
 }
 .column {
-  font-size: 30px;
+  font-size: 20px;
   /* display: flex; */
-  width: 650px;
-  height: 500px;
+  width: fit-content;
+  height: fit-content;
   text-align: right;
 }
 
@@ -42,10 +43,11 @@
   padding: 1%;
   font-size: 70%;
   margin-top: 5%;
-  width: 200px;
+  width: 100px;
+  /* display: flex; */
 }
 
 .form-control {
-  width: 250px;
+  width: 150px;
   height: 25px;
 }
